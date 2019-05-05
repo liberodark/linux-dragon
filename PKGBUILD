@@ -135,9 +135,7 @@ _package() {
   pkgdesc="The Linux kernel and modules with dragon patches"
   depends=(coreutils linux-firmware kmod mkinitcpio)
   optdepends=('crda: to set the correct wireless channels of your country')
-  provides=('linux' 'linux-xanmod-git')
-  replaces=('linux-xanmod-git')
-  conflicts=('linux-xanmod-git')
+  provides=('linux')
   backup=("etc/mkinitcpio.d/$pkgbase.preset")
   install=linux.install
 
@@ -191,9 +189,7 @@ _package() {
 
 _package-headers() {
   pkgdesc="Header files and scripts for building modules for Dragon Linux kernel"
-  provides=('linux-headers' 'linux-xanmod-git-headers')
-  replaces=('linux-xanmod-git-headers')
-  conflicts=('linux-xanmod-git-headers')
+  provides=('linux-headers')
 
   local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
 
