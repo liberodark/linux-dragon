@@ -191,7 +191,7 @@ _package() {
 }
 
 _package-headers() {
-  pkgdesc="Header files and scripts for building modules for Xanmod Linux kernel"
+  pkgdesc="Header files and scripts for building modules for Dragon Linux kernel"
   provides=('linux-headers' 'linux-xanmod-git-headers')
   replaces=('linux-xanmod-git-headers')
   conflicts=('linux-xanmod-git-headers')
@@ -281,5 +281,3 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
-
-# vim:set ts=8 sts=2 sw=2 et:
