@@ -44,7 +44,6 @@ fi
 pkgbase=linux-dragon
 _srcname=linux
 pkgver=5.1.19
-xanmod=7
 pkgrel=1
 arch=(x86_64)
 url="https://dragon-kernel.pro/"
