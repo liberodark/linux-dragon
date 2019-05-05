@@ -46,9 +46,9 @@ _srcname=linux
 pkgver=5.1.19
 pkgrel=1
 arch=(x86_64)
-url="https://dragon-kernel.pro/"
+url="https://github.com/Dragon-Team/dragon-v5"
 license=(GPL3)
-makedepends=(coreutils linux-firmware kmod mkinitcpio)
+makedepends=(xmlto kmod inetutils bc libelf python-sphinx graphviz)
 options=('!strip')
 _srcname="dragon-v5-${pkgver}-dragon"
 
